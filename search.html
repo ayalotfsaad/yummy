@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Yummy</title>
+</head>
+
+<body>
+
+<!-- nav section  -->
+<div class="nav-menu min-vh-100 position-fixed d-flex top-0 bottom-0">
+    <div class="nav-hiden d-flex flex-column justify-content-between align-content-lg-start min-vh-100 p-3 " id="sidemenu">
+        <div class="link">
+            <ul>
+                <li class="py-2"> <a href="./search.html">Search</a></li>
+                <li class="py-2" id="categoriesbtn"> <a href="./categories.html">Categories</a></li>
+                <li class="py-2"onclick="getArea()"><a href="./area.html">Area</a></li>
+                <li class="py-2"onclick="getingredients()"> <a href="./ingredent.html">Ingredients</a></li>
+                <li class="py-2 "> <a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+       
+        <div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <div>
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav-show d-flex flex-column justify-content-between align-items-center px-1 py-5">
+        <img src="./assets/logo.png" alt="">
+        <i class="fa-solid open fa-align-justify fa-2x  " id="openclose"></i>
+        <div class="nav-footer">
+            <i class="fa-solid fa-globe d-block py-2 "></i>
+            <i class="fa-solid fa-share-nodes "></i>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="inner-loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+</div>
+    
+<div class="container" id="searchContainer">
+    
+    <div class="row py-4 ">
+        <div class="col-md-6 ">
+            <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+        </div>
+        <div class="col-md-6">
+            <input onkeyup="searchByFLetter(this.value)" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+        </div>
+    </div>
+       
+</div>
+
+
+<div class="min-vh-100 position-relative">
+    <div class="inner-loading top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+     
+ <!-- displayfood   -->
+ <div class="container">
+    <div class="row py-5 g-4 " id="Datalist">
+        
+    </div>
+    </div>
+</div>
+</div>  
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

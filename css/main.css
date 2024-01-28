@@ -1,0 +1,81 @@
+body{
+    background-color:  #0D0D0D;
+    color: white;
+
+}
+body li{
+    cursor: pointer !important;
+}
+
+.loading{
+    height: 100vh !important;
+}
+.icons{
+    cursor: pointer !important;
+}
+.nav-show{
+    background-color: bisque;
+
+}
+.nav-show i{
+    cursor: pointer !important;
+
+}
+.nav-show img{
+    width: 50px;
+    color: #0D0D0D;
+}
+.nav-hiden{
+    background-color: #0D0D0D;
+}
+
+.link ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+::-webkit-scrollbar{
+    width: 9px;
+    height: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0,0.9);
+    border-radius: 6px;
+}
+
+
+.meal-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+}
+
+
+.inner-loading{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+
+.link ul li a{
+    color: white ;
+    text-decoration: none;
+}
+.alert{
+    width: fit-content;
+}
+.nav-menu{
+    z-index: 9999;
+}
+.col-md-3{
+    cursor: pointer !important;
+}
